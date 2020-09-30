@@ -203,6 +203,7 @@ section.section2 {
 
 h2.s2_header {
 	text-align: center;
+	padding-top: 40px;
 }
 
 div.steps {
@@ -245,9 +246,17 @@ footer {
 }
 
 div.footer {
-	display: inline-block;
+	float: left;
 	width: 40%;
 	padding: 40px;
+	
+}
+
+div.footer_res {
+	float: right;
+	width: 40%;
+	padding: 40px;
+	text-align: right;
 }
 
 
