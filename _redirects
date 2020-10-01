@@ -1,3 +1,4 @@
+/register	200!
 /home	/index
 /buy	/buy_tag
-/register	200!	Role=admin
+
