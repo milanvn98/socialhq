@@ -1,3 +1,7 @@
 /home	/index
 /buy	/buy_tag
+<<<<<<< HEAD
 /register /login Role=admin
+=======
+/register	200!	Role=admin
+>>>>>>> 23a220b0b1c4f7d57587f890009587438c492c12

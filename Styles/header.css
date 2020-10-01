@@ -1,0 +1,44 @@
+div.header_container {
+	margin: 0;
+	padding: 0;
+	color: white;
+}
+
+div.header_text {
+	float: left;
+	width: 50%;
+	color: white;
+	padding: 140px 0;
+}
+
+h1.header_text {
+	font-size: 50px;
+	padding-left: 10%;
+	padding-top: 87px;
+	margin-bottom: 50px;
+}
+
+a.buy_tag {
+	text-decoration: none;
+	border: 2px solid white;
+	border-radius: 10px;
+	padding: 10px;
+	margin: 10%;
+	color: white;
+}
+
+a.buy_tag:hover {
+	background-color: white;
+	color: black;
+}
+
+div.header_image {
+	float: right;
+	width: 50%;
+	text-align: center;
+	padding-top: 200px;
+}
+
+img.header_image {
+	height: 400px;
+}

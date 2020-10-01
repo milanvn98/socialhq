@@ -1,0 +1,47 @@
+
+div.blurb_text {
+	float: left;
+	width: 50%;
+	background-color: white;
+	height: 480px;
+}
+
+h2.blurb_title {
+	color: black;
+	padding: 60px 0% 0% 10%;
+}
+
+p.tutorial_text {
+	padding: 10px 10px 10px 10%;
+	color: black;
+	margin-bottom: 40px;
+}
+
+a.supported_devices {
+	text-decoration: none;
+	background-color: white;
+	color: black;
+	padding: 10px;
+	margin-left: 10%;
+	border-radius: 10px;
+	border: 2px solid black;
+}
+
+a.supported_devices:hover {
+	background-color: black;
+	color: white;
+}
+
+div.blurb_image {
+	float: right;
+	width: 50%;
+	background-color: white;
+	text-align: center;
+	height: 480px;
+}
+
+img.tutorial_image {
+	height: 400px;
+	padding-top: 50px;
+}
+

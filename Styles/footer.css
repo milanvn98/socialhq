@@ -1,0 +1,19 @@
+footer {
+	background-color: white;
+	text-decoration-style: none;
+	margin-top: 80px;
+}
+
+div.footer {
+	float: left;
+	width: 50%;
+	background-color: red;
+	
+}
+
+div.footer_res {
+	float: right;
+	width: 50%;
+	background-color: blue;
+	text-align: right;
+}
