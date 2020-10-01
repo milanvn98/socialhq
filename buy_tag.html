@@ -2,23 +2,25 @@
 <header>
 	<title>SocialHQ</title>
 	<link rel="stylesheet" type="text/css" href="main.css">
-	<body>
+	<body style="background-color: white;">
 		<div class="header">
 			<div class="nav">
-				<div class="logo"><img class="logo" src="Images/IdentityWhite.png"></div>
+				<div class="logo"><a href="home.html"><img class="logo" src="Images/IdentityWhite.png"></a></div>
+				<div class="login">
+					<div data-netlify-identity-menu></div>
+				</div>
 				<div class="nav_buttons">
 					<ul class="nav">
-						<li><a href="" class="active nav">Home</a></li>
+						<li><a href="home.html" class="active nav">Home</a></li>
 						<li><a href="" class="nav">Products</a></li>
 						<li><a href="" class="nav">Support</a></li>
 						<li><a href="" class="nav">Contact</a></li>
-						<li><a href="" class="nav">Login/Sign Up</a></li>
 					</ul>
 				</div>
 			</div>
 		</div>
 		<section class="buy_container">
-			<div id="my-store-37153147"></div>
+			<div id="my-store-37153147" style="margin-bottom: 400px;"></div>
 		</section>
 	</body>
 	<div><script data-cfasync="false" type="text/javascript" src="https://app.ecwid.com/script.js?37153147&data_platform=code&data_date=2020-09-29" charset="utf-8"></script>
@@ -53,4 +55,25 @@ window.ec.storefront.product_details_position_share_buttons=900;
 xProductBrowser("categoriesPerRow=3","views=grid(20,3) list(60) table(60)","categoryView=grid","searchView=list","defaultProductId=237930449","id=my-store-37153147");
 </script>
 </div>
+
+<script>
+var confirmationPageURL = "http://social-hq.com/";
+
+// Add handler for Ecwid's OnPageLoad event
+if (
+  typeof(Ecwid) == 'object'
+  && typeof(Ecwid.OnPageLoad) == 'object'
+) {
+  Ecwid.OnPageLoad.add(function(page) {
+    // Redirect user if needed
+    if (
+      typeof(page) == 'object'
+      && 'ORDER_CONFIRMATION' == page.type
+    ) {
+      window.location = confirmationPageURL;
+    }
+  });
+}
+</script>
+<script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </header>

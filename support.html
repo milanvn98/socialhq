@@ -4,31 +4,31 @@
 	<link rel="stylesheet" type="text/css" href="main.css">
 	<body>
 		<div class="header">
+			<div class="login">
+					<div data-netlify-identity-menu></div>
+				</div>
 			<div class="nav">
-				<div class="logo"><a href="home.html"><img class="logo" src="Images/IdentityWhite.png"></a></div>
+				<div class="logo"><a href="index.html"><img class="logo" src="Images/IdentityWhite.png"></a></div>
 				<div class="nav_buttons">
-					<ul class="nav">
-						<li><a href="home.html" class="active nav">Home</a></li>
-						<li><a href="" class="nav">Products</a></li>
-						<li><a href="" class="nav">Support</a></li>
+					<ul class="nav">		
+						<li><a href="index.html" class="nav">Home</a></li>
+						<li><a href="" class="active nav">Support</a></li>
 						<li><a href="" class="nav">Contact</a></li>
-						<li><a href="" class="nav">Login/Sign Up</a></li>
 					</ul>
 				</div>
 			</div>
 			
 			<div class="title">
-				<h1 class="title">Get Social.</br>Get Connected.</h1> 
-				<a href="buy_tag.html" class="buy_tag"> Order your Social Tag</a>
+				<h1 class="title">Support</h1> 
 			</div>
 			<div class="header_image"><img class="header_image" src="Images/Mockups/IphoneMockup.png">
 			</div></div>
 		<section class="section1">
 		<div style="background-color: white; height: 1300px;"> 
-			<div class="s1_text">
-				<h2 class="s1_title">Reinventing the way we connect.</h2>
-				<p class="s1_text">Your Social Tag is powered by <b>NFC technology</b> for a contactless way to network with the community around you. For all the social butterflies out there, our tag allows you to <b>share</b> all your social platforms at once.</br></br> This smart tag <b>sticks</b> to your mobile device making it easy to stay connected to the people you meet. No third party apps required! Simply tap your NFC enabled device* to the tag and share your <b>Instagram, Facebook, Snapchat, Twitter, TikTok</b> and more!</p>
-				<a href="" class="supported_devices">Supported Devices</a>
+			<div class="s1_text" id="compatible">
+				<h2 class="s1_title">Compatible NFC Devices</h2>
+				<p class="s1_text">The iPhone 7 onwards all have NFC functionality providing IOS 14 has been installed. The latest generations of iPhones can read NFC tags without an additional app, straight out of the box! Watch the video for a demonstration.</br></br> The iPhone 7, 8 and X have a built in NFC reader which can be actived in the control panel (swiping up on iPhone 7 & 8, swiping down on iPhone X.) </p>
+				<a href="https://en.wikipedia.org/wiki/List_of_NFC-enabled_mobile_devices" target="_blank" class="supported_devices">Full List of Supported Devices</a>
 			</div>
 			<div class="s1_image"><img class="tutorial" src="Images/Mockups/PhoneFront.png"></div></div>
 		</section>
@@ -41,7 +41,6 @@
 				<div style="display: inline-block; width: 70%">
 					<h2 class="steps_header">1. Order your Social Tag</h2>
 					<p class="steps">Simply order your social tag and we will encode your tag with a personal link to your SocialHQ. Using NFC technology, you are able to link your entire digital presence to a simple smart device.  </p>
-					<a href="buy_tag.html" class="step1_button">Order your Social Tag</a>
 				</div>
 			</div>
 			<div class="steps">
@@ -51,7 +50,6 @@
 				<div style="display: inline-block; width: 70%">
 					<h2 class="steps_header">2. Create your virtual identity</h2>
 					<p class="steps">Create your profile and link your social media accounts to your SocialHQ. Personalise your profile to include social networks like Instagram, Snapchat, Facebook and so much more!</br></br>*If you there is a social network of your preference not listed on your profile, please contact customer support and we will customise your page.</p>
-					<a href="" class="step1_button" style="padding: 8px 58px;">Sign Up</a>
 				</div>
 			</div>
 			<div class="steps">
@@ -70,7 +68,7 @@
 				<div style="display: inline-block; width: 70%">
 					<h2 class="steps_header">4. Connect & Share</h2>
 					<p class="steps">You are now ready to share your virtual identity with the world around you. You can copy and paste your social link into any bio to allow followers access to your SocialHQ. Or simply tap your tag to the back of your new connections phone and watch your socials appear!</p>
-					<a href="buy_tag.html" class="step1_button">Get your Social Tag</a>
+					<a href="buy_tag.html" class="step1_button">Get Started</a>
 				</div>
 			</div>
 
@@ -80,5 +78,7 @@
 			<div class="footer_res">All Rights Reserved by SocialHQ.</div>
 		</footer>
 	</body>
+	<script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
 </head>
 
