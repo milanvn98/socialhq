@@ -4,6 +4,11 @@ var social_links;
 $(document).ready(function() {
     bio_title = '';
     social_links = {};
+
+    $("#first_name").val('');
+    $("#last_name").val('');
+    $("#email").val('');
+    $("#phone").val('');
 });
 
 $(document).on('click', '.avatar', function(){
@@ -58,7 +63,7 @@ $(document).on('click', '.bio-title', function(e){
     $(".smartpage-container .action-sheet.title-sheet").addClass("active");
     $("body").addClass("open-modal");
 
-    bio_title = $(this).attr("data-id");
+    bio_title = $(this).attr("data-id"); 
     getTitleValue(bio_title);
 });
 
@@ -66,12 +71,18 @@ function getTitleValue(m_bio_title) {
     var flag;
     $('#bio_title_input').val('');
 
-    if(m_bio_title == 'bio-name') {
-        flag = $(".bio-name h1").hasClass("empty");
-        if(!flag) $('#bio_title_input').val($(".bio-name h1").html());
+    if(m_bio_title == 'bio-f-name') {
+        flag = $(".bio-f-name h1").hasClass("empty");
+        if(!flag) $('#bio_title_input').val($(".bio-f-name h1").html());
+        
+        $(".smartpage-container .title-sheet .action-sheet-header .action-sheet-title").html('First Name');
+        $("#bio_title_input").attr("placeholder", "First Name");
+    } else if(m_bio_title == 'bio-l-name') {
+        flag = $(".bio-l-name h1").hasClass("empty");
+        if(!flag) $('#bio_title_input').val($(".bio-l-name h1").html());
 
-        $(".smartpage-container .title-sheet .action-sheet-header .action-sheet-title").html('Name');
-        $("#bio_title_input").attr("placeholder", "Name");
+        $(".smartpage-container .title-sheet .action-sheet-header .action-sheet-title").html('Last Name');
+        $("#bio_title_input").attr("placeholder", "Last Name");
     } else if(m_bio_title == 'bio-email') {
         flag = $(".bio-email h1").hasClass("empty");
         if(!flag) $('#bio_title_input').val($(".bio-email h1").html());
@@ -104,21 +115,34 @@ $(document).on('click', '.smartpage-container .action-sheet .action-sheet-body',
 $(document).on('keyup', '#bio_title_input', function(e){
     var val = $(this).val();
 
-    if(bio_title == 'bio-name') {
+    if(bio_title == 'bio-f-name') {
         if(val.trim() == '')
-            $(".bio-name h1").html('<span>Name here</span>').addClass("empty");
+            $(".bio-f-name h1").html('<span>First Name</span>').addClass("empty");
         else
-            $(".bio-name h1").html(val).removeClass("empty");
+            $(".bio-f-name h1").html(val).removeClass("empty");
+
+        $("#first_name").val(val.trim());
+    } else if(bio_title == 'bio-l-name') {
+        if(val.trim() == '')
+            $(".bio-l-name h1").html('<span>Last Name</span>').addClass("empty");
+        else
+            $(".bio-l-name h1").html(val).removeClass("empty");
+
+        $("#last_name").val(val.trim());
     } else if(bio_title == 'bio-email') {
         if(val.trim() == '')
             $(".bio-email h1").html('<span>Email here</span>').addClass("empty");
         else
             $(".bio-email h1").html(val).removeClass("empty");
+
+        $("#email").val(val.trim());
     } else if(bio_title == 'bio-phone') {
         if(val.trim() == '')
             $(".bio-phone h1").html('<span>Phone here</span>').addClass("empty");
         else
             $(".bio-phone h1").html(val).removeClass("empty");
+
+        $("#phone").val(val.trim());
     }
 });
 
@@ -166,3 +190,82 @@ function generateSocialBtns(links) {
 
     $(".link-btns").html(html);
 }
+
+$(document).on('click', '.submit-btn', function(e){
+    setSocialLinkValues(social_links);
+
+    var first_name = $("#first_name").val();
+    var last_Name = $("#last_name").val();
+    var facebook = $("#facebook_link").val();
+    var instagram = $("#instagram_link").val();
+    var twitter = $("#twitter_link").val();
+    var snapchat = $("#snapchat_link").val();
+    var tikTok = $("#tiktok_link").val();
+    var linkedIn = $("#linkedin_link").val();
+    var pinterest = $("#pinterest_link").val();
+    var youtube = $("#youtube_link").val();
+    var tumblr = $("#tumblr_link").val();
+    var phone = $("#phone").val();
+    var email = $("#email").val();
+
+    // var whatsApp = $("#first_name").val();
+    // var messenger = $("#first_name").val();
+    // var spotify = $("#first_name").val();
+    // var onlyfans = $("#first_name").val();
+    // var depop = $("#first_name").val();
+    // var flickr = $("#first_name").val();
+    // var reddit = $("#first_name").val();
+    var whatsApp = '';
+    var messenger = '';
+    var spotify = '';
+    var onlyfans = '';
+    var depop = '';
+    var flickr = '';
+    var reddit = '';
+
+    var patreon = $("#patreon_link").val();
+    var vk = $("#vk_link").val();
+
+    $(".loader").css("display", "block");
+    jQuery.ajax({
+        url: './api/api.php',
+        data: {
+          'First_Name' : first_name,
+          'Last_Name' : last_Name,
+          'Facebook' : facebook,
+          'Instagram' : instagram,
+          'WhatsApp' : whatsApp,
+          'Messenger' : messenger,
+          'Twitter' : twitter,
+          'Snapchat' : snapchat,
+          'TikTok' : tikTok,
+          'LinkedIn' : linkedIn,
+          'Pinterest' : pinterest,
+          'Spotify' : spotify,
+          'Youtube' : youtube,
+          'Onlyfans' : onlyfans,
+          'Depop' : depop,
+          'Flickr' : flickr,
+          'Tumblr' : tumblr,
+          'Reddit' : reddit,
+          'Phone' : phone,
+          'Email' : email,
+        },
+        method: "POST",
+        success: function(response) {
+            $(".loader").css("display", "none");
+
+            if(response == "success") {
+                toastr.success('You have successfully added new customers.');
+                window.location.href = "https://www.social-hq.com/buy_tag";
+            } else {
+                toastr.warning('An error occurred in the API communication.');
+            }
+        },
+        error: function(jqXHR, textStatus, errorThrown) {
+            $(".loader").css("display", "none");
+            console.log("ajax error");
+            toastr.warning('An error occurred in the AJAX communication.');
+        }
+    });
+});
