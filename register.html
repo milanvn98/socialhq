@@ -19,7 +19,8 @@
 				</div>
 			</div>	
 		</div>
-		<div class="smartpage-container container">
+    <form name="register" method="POST" data-netlify="true" action="buy_tag.html">
+     <div class="smartpage-container container">
         <div class="page-header">
             <span class="settings-button service-button">Settings</span>
             <div class="avatar empty">
@@ -34,9 +35,14 @@
                 </div>
             </div>
             <input type="file" class="face-file-input" id="file_input" name="file_input" />
-            <div class="bio-title bio-name" data-id="bio-name">
+            <div class="bio-title bio-f-name" data-id="bio-f-name">
                 <h1 class="empty">
-                    <span>Name here</span>
+                    <span>First Name</span>
+                </h1>
+            </div>
+            <div class="bio-title bio-l-name" data-id="bio-l-name">
+                <h1 class="empty">
+                    <span>Last Name</span>
                 </h1>
             </div>
             <div class="bio-title bio-email" data-id="bio-email">
@@ -49,6 +55,10 @@
                     <span>Phone here</span>
                 </h1>
             </div>
+            <input type="hidden" id="first_name" name="first_name" value="" />
+            <input type="hidden" id="last_name" name="last_name" value="" />
+            <input type="hidden" id="email" name="email" value="" />
+            <input type="hidden" id="phone" name="phone" value="" />
         </div>
         <div class="add-block-button add-social-links">
             <span>
@@ -285,8 +295,9 @@
                 </div>
             </div>
         </div>
-	</body>
-	<script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-
-</head>
+        <button value="Submit">Submit</button>
+    </form>
+</body>
+    <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</html>
 
