@@ -1,26 +1,26 @@
 <!DOCTYPE html>
+<html lang="ja">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <link href="./style.css" rel="stylesheet" type="text/css">
+    <link href="Styles/register/style.css" rel="stylesheet" type="text/css">
+    <link href="Styles/register/register.css" rel="stylesheet" type="text/css">
+    <link href="Styles/nav.css" rel="stylesheet" type="text/css">
+    <link href="Styles/footer.css" rel="stylesheet" type="text/css">
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <script src="./script.js"></script> 
-	<title>SocialHQ</title>
-	<link rel="stylesheet" type="text/css" href="register.css">
-	<body>
-		<div class="header">
-			<div class="nav">
-				<div class="logo"><a href="index.html"><img class="logo" src="Images/IdentityWhite.png"></a></div>
-				<div class="login">
-					<div data-netlify-identity-menu></div>
-				</div>
-			</div>	
-		</div>
+</head>
+<body>
+    <div class="nav_container">
+        <div class="logo"><a href="index.html"><img class="logo" style="height:40px;" src="Images/IdentityWhite.png"></a></div>
+        <div class="nav_buttons">
+        </div>
+    </div>
     <form name="register" method="POST" data-netlify="true" action="buy_tag.html">
-     <div class="smartpage-container container">
+    <div class="smartpage-container container">
         <div class="page-header">
             <span class="settings-button service-button">Settings</span>
             <div class="avatar empty">
@@ -295,9 +295,10 @@
                 </div>
             </div>
         </div>
-        <button value="Submit"><div class="ecsp ecsp-SingleProduct-v2 ecsp-Product ec-Product-237930449" itemtype="http://schema.org/Product" data-single-product-id="237930449"><div class="ecsp-title" itemprop="name" style="display:none;" content="Social Tag"></div><div customprop="addtobag"></div></div><script data-cfasync="false" type="text/javascript" src="https://app.ecwid.com/script.js?37153147&data_platform=singleproduct_v2" charset="utf-8"></script><script type="text/javascript">xProduct()</script></button>
-    </form>
+        <div style="text-align: center;">
+            <a class="submit" href="buy_tag.html"><button class="submit" value="submit" href="buy_tag.html">Submit</button></a>
+        </div>
+        </form>
 </body>
-    <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </html>
-

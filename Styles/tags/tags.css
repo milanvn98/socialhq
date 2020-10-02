@@ -1,0 +1,96 @@
+body, div {
+	background-color: white;
+	padding: 0;
+	margin: 0;
+}
+
+div.product_container {
+
+}
+
+div.product_image {
+	float: left;
+	width: 50%;
+	background-color: white;
+	text-align: center;
+	height: 700px;
+
+}
+
+div.product_info {
+	float: right;
+	width: 50%;
+	background-color: white;
+	padding: 20px 0;
+	height: 660px;
+}
+
+img.product_image {
+	width: 55%;
+	padding-top: 220px;
+}
+
+div.product_category {
+	padding: 30px 0 0 10%;
+}
+
+div.product_title {
+	padding: 20px 0 20px 10%;
+}
+
+h2.product_title {
+	font-size: 40px;
+}
+
+div.product_description {
+	padding: 0 10% 20px 10%;
+}
+
+div.product_support {
+	padding: 0 10% 20px 7%;
+}
+
+img.svg_icon {
+	float: left;
+	width: 20px
+
+}
+
+a.support {
+	margin-left: 10px; 
+}
+
+div.product_price {
+	padding: 0 0 0 10%;
+	float: left;
+	width: 80%;
+}
+
+div.pound_symbol {
+	float: left;
+	padding-right: 10px;
+}
+
+div.amount {
+	display: inline-block;
+	font-size: 40px;
+	margin-bottom: 40px;
+}
+
+div.product_buy {
+	padding-left: 5%;
+}
+
+a.get_started {
+	border: black 2px solid;
+	padding: 10px 40px;
+	margin-left: 40px;
+	border-radius: 10px;
+	text-decoration: none;
+	color: black;
+}
+
+a.get_started:hover {
+	color:white;
+	background-color:black;
+}

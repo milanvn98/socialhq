@@ -1,7 +1,12 @@
+div {
+	background-color: black;
+}
+
 div.header_container {
 	margin: 0;
 	padding: 0;
 	color: white;
+	background-color: black;
 }
 
 div.header_text {

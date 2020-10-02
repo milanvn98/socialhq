@@ -3,7 +3,6 @@
 body, div {
 	padding: 0;
 	margin: 0;
-	background-color: black;
 	font-family: 'Roboto', sans-serif;
 }
 
@@ -75,6 +74,14 @@ padding-bottom: 15px;
 li a.active {
 	border-bottom: 3px solid white;
 	padding-bottom: 15px;
+}
+
+.netlify-identity-user-details {
+	display: none;
+}
+
+.netlify-identity-logout {
+	display: inline-block;
 }
 
 
