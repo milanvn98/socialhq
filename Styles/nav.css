@@ -9,8 +9,9 @@ body, div {
 
 div.nav_container {
 	margin: 0;
-	padding: 0;
+	padding: 0 0 40px 0;
 	text-align: center;
+	background-color: black;
 }
 
 div.nav_buttons {
@@ -18,26 +19,36 @@ div.nav_buttons {
 	margin: 0;
 	padding-top: 40px;
 	width: 50%;
+	background-color: black;
 }
 
 div.logo {
 	float: left;
 	margin: 0;
 	padding: 0;
-	width: 25%;
+	width: 24.5%;
 	text-align: left;
+	background-color: black;
 }
 
 div.signup {
 	float: right;
 	margin: 0;
 	padding-top: 40px;
-	width: 25%;
+	width: 25.5%;
+	background-color: black;
+}
+
+div.login {
+	color: white;
+	text-align: right;
+	padding-right: 30px; 
+	background-color: black;
 }
 
 img.logo {
 	height: 69px;
-	padding-top: 20px;
+	padding-top: 30px;
 	padding-left: 20%;
 }
 
@@ -66,7 +77,4 @@ li a.active {
 	padding-bottom: 15px;
 }
 
-div.login {
-	color: white;
-	text-align: right;
-}
+

@@ -1,0 +1,39 @@
+div.compatible_container {
+
+}
+
+div.compatible_text {
+	background-color: white;
+	float: left;
+	width: 50%;
+	height: 484px;
+}
+
+div.compatible_video {
+	background-color: white;
+	float: right;
+	width: 50%;
+	text-align: center;
+}
+
+h2.compatible_heading {
+	padding: 80px 0 10px 10%;
+}
+
+p.compatible_text {
+	padding: 0px 30px 30px 10%;
+}
+
+a.full_list {
+	text-decoration: none;
+	border: black 2px solid;
+	padding: 10px 40px;
+	border-radius: 10px;
+	color: black;
+	margin: 0 0 0 10%;
+}
+
+img.compatible_video {
+	height: 400px;
+	padding-top: 80px;
+}
