@@ -1,0 +1,72 @@
+div.form_container {
+	margin-top: 40px;
+	margin-bottom: 600px;
+}
+div.form_box {
+	float: left;
+	width: 50%;
+	background-color: white;
+
+}
+
+div.info {
+	float: right;
+	width: 45%;
+	background-color: white;
+	padding-top: 0px;
+	height: 505px;
+}
+
+div.form {
+	width: 60%;
+	border: #787878 2px solid;
+	float: right;
+	filter: drop-shadow(8px 8px 7px #787878);
+	background-color: white;
+}
+
+div.form_contents {
+	padding: 40px 0 0 0px;
+}
+
+div.item_container {
+	padding: 20px 0 5% 0;
+}
+
+div.label {
+padding: 10px 20px;
+}
+
+
+
+input {
+	width: 80%;
+	height: 30px;
+	font-size: 20px;
+	font-family: 'Roboto', sans-serif;
+	margin: 5px 20px;
+}
+
+textarea.message {
+	width: 80%;
+	font-size: 20px;
+	font-family: 'Roboto', sans-serif;
+	margin: 5px 20px;
+	height: 150px;
+	box-sizing: border-box;
+	resize: none;
+	padding: 0;
+}
+
+button.submit {
+	background-color: white;
+	border-radius: 10px;
+	border: black solid 2px;
+	padding: 10px 40px;
+	margin: 20px;
+}
+
+button.submit:hover {
+	background-color: black;
+	color: white;
+}

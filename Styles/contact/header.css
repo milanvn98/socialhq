@@ -1,0 +1,19 @@
+div.header_container {
+	margin: 0;
+	padding: 0;
+	background-color: white;
+	color: black;
+	text-align: center;
+}
+
+div.question {
+	padding-top: 40px;
+}
+
+div.header_title {
+
+}
+
+h1.header_title {
+	font-size: 50px;
+}
