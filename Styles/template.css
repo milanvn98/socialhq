@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url("https://use.typekit.net/rkm5wej.css");
 
 body {
-	background: white url('Images/Background.jpg');
-	background-size: 100% 100%;
+	background: white url('../Images/Background-01.png');
+	background-size: cover;
 	background-repeat: no-repeat;
 	margin: 0;
 	padding: 0;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'dunbar-text', sans-serif;
 	height: 100%;
 	width: 100%;
 }
